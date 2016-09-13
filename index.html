@@ -261,13 +261,13 @@
         var trails = {
             user_name: 'rogersm620',
             type: 'cartodb',
-            https: true, 
             sublayers: [
                 {
                     sql: "SELECT * FROM trails_wgs84",
                     cartocss: $("#trails2").text()
                 }
-            ]
+            ],
+            https: true
         }
         var trailLayer = cartodb.createLayer(map, trails).addTo(map)
             .on('done', function(layer) {
@@ -285,13 +285,13 @@
         var accessPoints = {
             user_name: 'rogersm620',
             type: 'cartodb',
-            https: true,
             sublayers: [
                 {
                     sql: "SELECT * FROM access_points",
                     cartocss: $("#accessPoints").text()
                 }
-            ]
+            ],
+            https: true
         }
         var accessLayer = cartodb.createLayer(map, accessPoints).addTo(map)
             .on('done', function(layer) {
