@@ -266,10 +266,9 @@
                     sql: "SELECT * FROM trails_wgs84",
                     cartocss: $("#trails2").text()
                 }
-            ],
-            https: true
+            ]
         }
-        var trailLayer = cartodb.createLayer(map, trails).addTo(map)
+        var trailLayer = cartodb.createLayer(map, trails, https: true).addTo(map)
             .on('done', function(layer) {
             
                 var sublayer = layer.getSubLayer(0);
@@ -290,10 +289,9 @@
                     sql: "SELECT * FROM access_points",
                     cartocss: $("#accessPoints").text()
                 }
-            ],
-            https: true
+            ]
         }
-        var accessLayer = cartodb.createLayer(map, accessPoints).addTo(map)
+        var accessLayer = cartodb.createLayer(map, accessPoints, https: true).addTo(map)
             .on('done', function(layer) {
             
                 var sublayer = layer.getSubLayer(0);
