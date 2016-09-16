@@ -400,33 +400,33 @@
             $('#loader').hide();
         }
         
-        function findUserLoc() {
-            if(navigator.geolocation) {
-                
-                var timeoutVal = 10 * 1000 * 1000;
-                
-                navigator.geolocation.watchPosition(
-                    mapUserLoc,
-                    alertError,
-                    {enableHighAccuracy: true, timeout: timeoutVal}
-                );
-            } else {
-                alert("Geolocation is not supported by your browser :(");
-            }
-            
-            function alertError(error) {
-            
-                var errors = {
-                    1: 'Permission denied',
-                    2: 'Position unavailable',
-                    3: 'Request timeout'
-                };
-            alert("Error: " + errors[error.code]);
-            }
-        }
+//        function findUserLoc() {
+//            if(navigator.geolocation) {
+//                
+//                var timeoutVal = 10 * 1000 * 1000;
+//                
+//                navigator.geolocation.watchPosition(
+//                    mapUserLoc,
+//                    alertError,
+//                    {enableHighAccuracy: true, timeout: timeoutVal}
+//                );
+//            } else {
+//                alert("Geolocation is not supported by your browser :(");
+//            }
+//            
+//            function alertError(error) {
+//            
+//                var errors = {
+//                    1: 'Permission denied',
+//                    2: 'Position unavailable',
+//                    3: 'Request timeout'
+//                };
+//            alert("Error: " + errors[error.code]);
+//            }
+//        }
         
         function findClosest() {
-            findUserLoc();
+            mapUserLoc();
             $('#loader').show();
         }
 
