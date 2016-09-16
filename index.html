@@ -408,7 +408,7 @@
                 navigator.geolocation.watchPosition(
                     mapUserLoc,
                     alertError,
-                    {enableHighAccuracy: true, timeout: timeoutVal, maximumAge: 0}
+                    {enableHighAccuracy: true, timeout: timeoutVal}
                 );
             } else {
                 alert("Geolocation is not supported by your browser :(");
