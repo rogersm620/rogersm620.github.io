@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Ryan Rogers, MAP672</title>
+<title>Ryan Rogers, MAP673</title>
 
 <meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
 
@@ -91,40 +91,41 @@
 
 <body>
     <header>
-        <img src="images/Pictograms-nps-campfire-2.svg.png" alt="campfire" class="header-image">
+        <img src="images/campfire.png" alt="campfire" class="header-image">
         <h1>Ryan Rogers, Professional Biologist and Amateur Weekend Explorer.</h1>
-        <h2>Web Mapping Portfolio for MAP 672</h2></header>
+        <h2>Web Mapping Portfolio for MAP 673</h2></header>
 
     <section class="project">
-        <a href="maps/lab04breweries_2.pdf" target="_blank"><img src="images/SSqgis.png" alt="Breweries in North America" class="project-image"></a>
-        <h3><a href="maps/lab04breweries_2.pdf" target="_blank">Breweries in North America and Hawaii</a></h3>
-        <p>Hexbin map showing density of breweries (per 50 km hexagons) in North America. Inset shows heatmap of breweries in King County, Washington (highest density in the United States).</p>
-        <p>This map was generated in QGIS.</p>
+        <a href="https://rogersm620.github.io/texas-paddling-trails/" target="_blank"><img src="images/paddling.jpg" alt="Texas Paddling Trails" class="project-image"></a>
+        <h3><a href="https://rogersm620.github.io/texas-paddling-trails/" target="_blank">Texas Paddling Trails</a></h3>
+
+        <p>This map was created to explore and locate offical Texas Paddling Trails. The map was designed for the moblile experience with pinch and zoom functionality and features a geolocation feature for finding trails near the user's current location.</p>
+        <p>This map was generated importing access points into QGIS, then digitizing individual trails. Data was then pushed to Carto, and pulled down into a Leaflet map.</p>
         <ul>
-            <li>Full map: <a href="maps/lab04breweries_2.pdf" target="_blank">Breweries in North America</a></li>
-            <li>Data Sources: <a href="http://www.census.gov" target="_blank">U.S. Census Bureau</a> and <a href="http://www.poi-factory.com" target="_blank">POI Factory</a></li>
+            <li>Full map: <a href="https://rogersm620.github.io/texas-paddling-trails/" target="_blank">Texas Paddling Trails</a></li>
+            <li>Data Sources: <a href="http://tpwd.texas.gov" target="_blank">Texas Parks and Wildlife Department</a></li>
         </ul>
     </section>
     
     <section class="project">
-        <a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank"><img src="images/SScarto.png" alt="Chisholm Trail (1873)" class="project-image"></a>
-        <h3><a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank">The Chisholm Trail (1873)</a></h3>
+        <a href="https://rogersm620.github.io/Chisholm1873/" target="_blank"><img src="images/SScarto.png" alt="Chisholm Trail (1873)" class="project-image"></a>
+        <h3><a href="https://rogersm620.github.io/Chisholm1873/" target="_blank">The Chisholm Trail (1873)</a></h3>
         <p>This interactive map was created to let users experience the most complete map of the Chisholm Cattle Trail available. Users can look at trail names, starting, and ending locations (when available) by hovering the cursor over trails.</p>
-        <p>This map was created by georeferencing the map The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873 in QGIS, then digitizing individual trails. Data was then uploaded to CartoDB, and used to produce the final map.</p>
+        <p>This map was created by georeferencing the map The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873 in QGIS, then digitizing individual trails. Data was then uploaded to Carto, and used to produce the final Leaflet map.</p>
         <ul>
-            <li>Full map: <a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank">The Chisholm Trail (1873)</a></li>
-            <li>Data Source: <a href="maps/1873_Map_of_Chisholm_Trail_with_subsidiary_trails_in_Texas.jpg" target="_blank"><i>The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873</i></a></li>
+            <li>Full map: <a href="https://rogersm620.github.io/Chisholm1873/" target="_blank">The Chisholm Trail (1873)</a></li>
+            <li>Data Source: <a href="images/1873_Map_of_Chisholm_Trail_with_subsidiary_trails_in_Texas.jpg" target="_blank"><i>The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873</i></a></li>
         </ul>
     </section>
     
     <section class="project">
-        <a href="http://rogersm620.github.io/us-power-generation/" target="_blank"><img src="images/SSleaflet.png" alt="Non-Coal Power Generation" class="project-image"></a>
-        <h3><a href="http://rogersm620.github.io/us-power-generation/" target="_blank">U.S. Electric Power Generation from Non-coal Sources</a></h3>
-        <p>This interactive map uses proportional symbology to represent non-coal sources of electricity in the United States. Users can filter their searches by three different source types, or by clicking on a location. A pop up window will display the site name, source type, and location from the selected point.</p>
-        <p>This map was created using the Leaflet JavaScript library.</p>
+        <a href="https://rogersm620.github.io/kenya-health/" target="_blank"><img src="images/health.png" alt="Kenyan-Health" class="project-image"></a>
+        <h3><a href="https://rogersm620.github.io/kenya-health/" target="_blank">Health Facilities Operated by the Kenyan MOH</a></h3>
+        <p>This interactive map represents health care facilities operated by the Kenyan Ministry of Health. Different facility levels are represented with different selectable layers. Information about each facility can be obtained by hovering over each marker.</p>
+        <p>This map was created from data imported from the Kenyan Open Data Portal, using Mapbox.</p>
         <ul>
-            <li>Full map: <a href="http://rogersm620.github.io/us-power-generation/" target="_blank">U.S. Electric Power Generation from Non-coal Sources</a></li>
-            <li>Data Source: <a href="http://www.eia.gov" target="_blank">U.S. Energy Information Administration</a></li>
+            <li>Full map: <a href="hhttps://rogersm620.github.io/kenya-health/" target="_blank">Health Facilities Operated by the Kenyan MOH</a></li>
+            <li>Data Source: <a href="https://www.opendata.go.ke/" target="_blank">Kenya Open Data Portal</a></li>
         </ul>
     </section>
 </body>
