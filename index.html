@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ryan Rogers, MAP672</title>
+
+<meta name=‘viewport’ content=‘initial-scale=1,maximum-scale=1,user-scalable=no’ />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+<link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    
+<style>
+    
+    body {
+        background: black;
+        font-family: 'Cabin', sans-serif;
+    }
+    header {
+        width: 100%;
+        min-width: 800px;
+        margin: 0 auto;
+        background: whitesmoke;
+        padding: 15px 0 30px;
+    }
+    h1 {
+        font-family: 'Ubuntu', sans-serif;
+        color: #375671;
+        width: 80%;
+        margin: 0 auto;
+        color: black;
+    }
+    h2 {
+        font-family: 'Ubuntu', sans-serif;
+        color: #375671;
+        width: 80%;
+        margin: 0 auto;
+        color: black;
+    }
+    h3 {
+        font-family:'Cabin', sans-serif;
+        color: gainsboro;
+    }
+    p {
+        font-size: .9em;
+        color: whitesmoke;
+    }
+    ul {
+        list-style-type: none;
+        font-size: .9em;
+        color: dodgerblue;
+        line-height: 1.6em;
+    }
+    a, a:visited {
+        color: white;
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
+        }
+    .project {
+        width: 80%;
+        min-width: 800px;
+        height: 100%;
+        margin: 35px auto;
+    }
+    .project:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .project-image {
+        width: 388px;
+        height: 240px;
+        background: white;
+        float: left;
+        margin-right: 20px;
+        border: 1px solid gainsboro;
+    }
+    .header-image {
+        width: 80px;
+        height: 80px;
+        background: whitesmoke;
+        float: left;
+        margin: 1px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+</head>
+
+<body>
+    <header>
+        <img src="images/Pictograms-nps-campfire-2.svg.png" alt="campfire" class="header-image">
+        <h1>Ryan Rogers, Professional Biologist and Amateur Weekend Explorer.</h1>
+        <h2>Web Mapping Portfolio for MAP 672</h2></header>
+
+    <section class="project">
+        <a href="maps/lab04breweries_2.pdf" target="_blank"><img src="images/SSqgis.png" alt="Breweries in North America" class="project-image"></a>
+        <h3><a href="maps/lab04breweries_2.pdf" target="_blank">Breweries in North America and Hawaii</a></h3>
+        <p>Hexbin map showing density of breweries (per 50 km hexagons) in North America. Inset shows heatmap of breweries in King County, Washington (highest density in the United States).</p>
+        <p>This map was generated in QGIS.</p>
+        <ul>
+            <li>Full map: <a href="maps/lab04breweries_2.pdf" target="_blank">Breweries in North America</a></li>
+            <li>Data Sources: <a href="http://www.census.gov" target="_blank">U.S. Census Bureau</a> and <a href="http://www.poi-factory.com" target="_blank">POI Factory</a></li>
+        </ul>
+    </section>
+    
+    <section class="project">
+        <a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank"><img src="images/SScarto.png" alt="Chisholm Trail (1873)" class="project-image"></a>
+        <h3><a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank">The Chisholm Trail (1873)</a></h3>
+        <p>This interactive map was created to let users experience the most complete map of the Chisholm Cattle Trail available. Users can look at trail names, starting, and ending locations (when available) by hovering the cursor over trails.</p>
+        <p>This map was created by georeferencing the map The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873 in QGIS, then digitizing individual trails. Data was then uploaded to CartoDB, and used to produce the final map.</p>
+        <ul>
+            <li>Full map: <a href="https://rogersm620.cartodb.com/viz/39cdf27a-f3ba-11e5-90ba-0e5db1731f59/public_map" target="_blank">The Chisholm Trail (1873)</a></li>
+            <li>Data Source: <a href="maps/1873_Map_of_Chisholm_Trail_with_subsidiary_trails_in_Texas.jpg" target="_blank"><i>The Old Chisholm Cattle Trail with Subsidiary Trails in Texas 1873</i></a></li>
+        </ul>
+    </section>
+    
+    <section class="project">
+        <a href="http://rogersm620.github.io/us-power-generation/" target="_blank"><img src="images/SSleaflet.png" alt="Non-Coal Power Generation" class="project-image"></a>
+        <h3><a href="http://rogersm620.github.io/us-power-generation/" target="_blank">U.S. Electric Power Generation from Non-coal Sources</a></h3>
+        <p>This interactive map uses proportional symbology to represent non-coal sources of electricity in the United States. Users can filter their searches by three different source types, or by clicking on a location. A pop up window will display the site name, source type, and location from the selected point.</p>
+        <p>This map was created using the Leaflet JavaScript library.</p>
+        <ul>
+            <li>Full map: <a href="http://rogersm620.github.io/us-power-generation/" target="_blank">U.S. Electric Power Generation from Non-coal Sources</a></li>
+            <li>Data Source: <a href="http://www.eia.gov" target="_blank">U.S. Energy Information Administration</a></li>
+        </ul>
+    </section>
+</body>
+</html>
